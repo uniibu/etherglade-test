@@ -11,7 +11,11 @@
     var example_instance = new etherglade("7DD1F47B", "rop_aebb6a0b278d187e061c6b48b6e26434f8");
     example_instance.initiateComponent('#etherglade_container', {
         value: 100000000000000000,
-        changeableValue: true
+        changeableValue: true,
+        onSuccess: function(transaction_id) {
+    console.log("Success!");
+    console.log(transaction_id);
+  }
     });
   </script>
 </body>
