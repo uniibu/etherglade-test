@@ -16,8 +16,8 @@
   <script src="js/web3.min.js"></script>
   <script type="text/javascript">
 
-    var web3 = new Web3();
-    web3.setProvider(new web3.providers.HttpProvider("https://wallet.parity.io"));
+    var web3 = new Web3('https://ws-wallet.parity.io/');
+
     // solidity code code
     var source = "" +
     "pragma solidity ^0.4.6;" +
